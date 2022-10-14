@@ -1,0 +1,126 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>JS EXAM</title>
+    </head>
+    <body>
+      <section class="pt-5">
+        <div class="container w-75 responsive">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control text-center"
+                id="searchMovies" placeholder="get movies by word.."
+                onkeyup="searchData()" />
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control text-center" id="allMovies"
+                placeholder="search.." />
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row" id="line"></div>
+        </div>
+        <section class="container w-75 py-1 my-1 text-center">
+          <div class="row" id="rowData"></div>
+        </section>
+        <div class="container w-75 my-5" id="contact">
+          <h1 class="text-white">ContactUs...</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control mt-5 text-center" id="name"
+                placeholder="Enter Your Name" onkeyup="validName()" />
+              <div class="alert alert-danger" id="alertName">
+                <p>Your Name is not valid</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control mt-5 text-center"
+                id="email" placeholder="Enter Email" onkeyup="validEmail()" />
+              <div class="alert alert-danger" id="alertEmail">
+                <p>entre valid email</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control mt-5 text-center"
+                id="phone" placeholder="Enter Phone" onkeyup="validPhone()" />
+              <div class="alert alert-danger" id="alertPhone">
+                <p>entre valid phone</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control mt-5 text-center" id="age"
+                placeholder="Enter Age" onkeyup="validAge()" />
+              <div class="alert alert-danger" id="alertAge">
+                <p>entre valid Age</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="password" class="form-control mt-5 text-center"
+                id="password" placeholder="Enter Password"
+                onkeyup="validPassword()" />
+              <div class="alert alert-danger" id="alertPassword">
+                <p>
+                  entre valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="password" class="form-control mt-5 text-center"
+                id="repassword" placeholder="Enter RePassword"
+                onkeyup="validRePassword()" />
+              <div class="alert alert-danger" id="alertRePassword">
+                <p>entre valid Repassword</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline-danger mt-5 text-center">Submit</button>
+        </div>
+      </section>
+
+      <section class="outerBox">
+        <div class="imgNav">
+          <img src="images/logo.png">
+        </div>
+        <div class="LinksNav">
+          <i class="fa-solid fa-align-justify"></i>
+        </div>
+        <div class="iconsNav">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="innerBox">
+          <div class="innerLinks">
+            <ul>
+              <li class="item1"><a href="#" class="navLink" movie="now_playing">Now
+                  playing</a></li>
+              <li class="item2"><a href="#" class="navLink" movie="popular">Popular</a></li>
+              <li class="item3"><a href="#" class="navLink" movie="top_rated">Top
+                  Rated</a></li>
+              <li class="item5"><a href="#" class="navLink" movie="upcoming">Upcoming</a></li>
+              <li class="item6"><a href="#contact" class="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="innerIcon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p class="position-absolute paragraph text-muted">Designed By Shadi
+            Abas</p>
+        </div>
+      </section>
+
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/all.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+
+  </html>
+</html>
